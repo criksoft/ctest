@@ -1,0 +1,16 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+BreakBeforeBraces: Custom
+BraceWrapping:
+#  AfterStruct: false
+#  AfterUnion: false
+#  AfterEnum: false
+  AfterFunction: true
+#  AfterControlStatement: false
+#  BeforeElse: false
+#  BeforeWhile: false
+IndentWidth: 4
+TabWidth: 4
+#Cpp11BracedListStyle: false
+...
