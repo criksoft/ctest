@@ -22,7 +22,14 @@ int main(void)
     //               1, 5, 9,13,17, 2, 6,10,14,18, 3, 7,11,15,19, 4, 8,12,16,20;
 
 
-    int *ar[4];
+    int b[20] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+
+    int (*c)[4] = (int(*)[4])&b;
+
+    printf("%d\n", *(b + (3 * 4) + 2));
+    printf("%d\n", c[3][2]);
+
+    int *ar[4]; // jagged array
     ar[0] = malloc(20 * sizeof(int));
     ar[1] = malloc(4 * sizeof(int));
 
